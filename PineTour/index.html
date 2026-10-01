@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PineTour</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-sky-50 min-h-screen max-w-350 m-auto">
+    <div class="bg-sky-50">
+      <!--  -->
+      <!-- hero -->
+      <!--  -->
+
+      <header
+        class="bg-[url('images/hero.png')] relative bg-cover bg-center h-[60vh] flex items-center justify-center">
+        <div
+          class="absolute inset-0 bg-linear-to-t from-sky-50 to-transparent"></div>
+        <div
+          class="absolute flex justify-between w-full gap-3 top-0 left-0 items-center px-4 py-4 md:px-20 md:py-6">
+          <img
+            class="h-8 md:h-10 cursor-pointer hover:bg-gray-600 transition duration-200 p-1 rounded-full"
+            src="images/PiCo-logo.png" />
+
+          <div class="flex gap-3 text-sm p-4 text-white md:gap-18 md:text-xl">
+            <a
+              data-en="Home"
+              data-mn="Нүүр"
+              class="cursor-pointer hover:bg-gray-600 transition duration-200 p-2 rounded-full"
+              href="home"></a>
+            <a
+              data-en="About"
+              data-mn="Бидний тухай"
+              class="cursor-pointer hover:bg-gray-600 transition duration-200 p-2 rounded-full"
+              href="about"></a>
+            <a
+              data-en="Contact"
+              data-mn="Холбоо барих"
+              class="cursor-pointer hover:bg-gray-600 transition duration-200 p-2 rounded-full"
+              href="contact"></a>
+            <a
+              class="cursor-pointer hover:bg-gray-600 transition duration-200 p-2 rounded-full"
+              href="user"
+              >👤</a
+            >
+          </div>
+
+          <button
+            id="language"
+            class="cursor-pointer bg-white px-3 py-3 rounded-full hover:bg-gray-700 hover:text-white transition duration-200">
+            MN
+          </button>
+        </div>
+        <div
+          class="relative items-center text-center flex flex-col gap-4 font-extrabold">
+          <h2
+            data-en="PURE MAGIC"
+            data-mn="Жинхэнэ гайхамшиг"
+            class="text-3xl md:text-5xl text-transparent bg-linear-to-b from-white to-white/20 bg-clip-text"></h2>
+          <h1
+            data-en="AWAITS!"
+            data-mn="Хүлээж байна!"
+            class="text-6xl md:text-9xl text-transparent bg-linear-to-b from-white to-white/60 bg-clip-text"></h1>
+          <h3 class="text-3xl md:text-5xl text-gray-200">2026</h3>
+        </div>
+      </header>
+
+      <!--  -->
+      <!-- Location -->
+      <!--  -->
+
+      <section
+        class="flex flex-wrap justify-center md:justify-evenly items-center gap-10 py-15 px-5">
+        <a
+          href="https://en.wikipedia.org/wiki/Terkhiin_Tsagaan_Lake"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative w-65 h-95 rounded-4xl overflow-hidden bg-[url('images/Terhiin-tsagaan-nuur.png')] bg-cover bg-center shadow-[8px_8px_0_1px_#29728B40,-8px_-8px_0_1px_#1F72AA75]">
+          <div
+            class="absolute inset-0 flex items-center justify-center font-bold uppercase text-center transition duration-200 hover:bg-black/40 cursor-pointer">
+            <p
+              data-en="terkhiin tsagaan lake"
+              data-mn="тэрхийн цагаан нуур"
+              class="text-white text-2xl font-bold uppercase text-center"></p>
+          </div>
+        </a>
+        <a
+          href="https://en.wikipedia.org/wiki/Amarbayasgalant_Monastery"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative w-65 h-95 rounded-4xl overflow-hidden bg-[url('images/Amarbaysgalant-hiid.png')] bg-cover bg-center shadow-[8px_8px_0_1px_#29728B40,-8px_-8px_0_1px_#1F72AA75]">
+          <div
+            class="absolute inset-0 flex items-center justify-center font-bold uppercase text-center transition duration-200 hover:bg-black/40 cursor-pointer">
+            <p
+              data-en="amarbayasgalant monastery"
+              data-mn="амарбаясгалант хийд"
+              class="text-white text-2xl font-bold uppercase text-center"></p>
+          </div>
+        </a>
+        <a
+          href="https://en.wikipedia.org/wiki/Lake_Kh%C3%B6vsg%C3%B6l"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative w-65 h-95 rounded-4xl overflow-hidden bg-[url('images/Howsgol-nuur.png')] bg-cover bg-center shadow-[8px_8px_0_1px_#29728B40,-8px_-8px_0_1px_#1F72AA75]">
+          <div
+            class="absolute inset-0 flex items-center justify-center font-bold uppercase text-center transition duration-200 hover:bg-black/40 cursor-pointer">
+            <p
+              data-en="khuvsgul lake"
+              data-mn="хөвсгөл нуур"
+              class="text-white text-2xl font-bold uppercase text-center"></p>
+          </div>
+        </a>
+        <div
+          class="relative w-65 h-95 rounded-4xl overflow-hidden bg-[url('images/Horgiin-togoo.png')] bg-cover bg-center shadow-[8px_8px_0_1px_#29728B40,-8px_-8px_0_1px_#1F72AA75]">
+          <a
+            href="https://mn.wikipedia.org/wiki/%D0%A5%D0%BE%D1%80%D0%B3%D0%BE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="absolute inset-0 flex items-center justify-center font-bold uppercase text-center transition duration-200 hover:bg-black/40 cursor-pointer">
+            <p
+              data-en="khorgiin togoo"
+              data-mn="хоргын тогоо"
+              class="text-white text-2xl font-bold uppercase text-center"></p>
+          </a>
+        </div>
+      </section>
+
+      <!--  -->
+      <!-- Roadmap -->
+      <!--  -->
+
+      <section
+        class="relative flex flex-col-reverse lg:block max-w-350 mx-auto">
+        <img class="w-full h-auto" src="images/Roadmap.png" alt="map" />
+
+        <div
+          class="absolute inset-0 bg-linear-to-t from-sky-50 to-transparent"></div>
+
+        <div
+          class="relative flex flex-col items-center pt-8 lg:absolute lg:inset-0">
+          <h2
+            data-en="Destination of Our Agency"
+            data-mn="Манай Агентлагийн Зорилго"
+            class="text-3xl md:text-5xl font-bold text-center"></h2>
+          <p
+            data-en="Pack Your Bags And Get Ready"
+            data-mn="Цүнхээ баглаад, Бэлдээрэй"
+            class="text-gray-500 text-xs md:text-2xl text-center"></p>
+
+          <div
+            class="w-full px-4 mt-6 flex flex-col gap-3 lg:w-1/3 lg:px-0 lg:self-start lg:my-auto lg:ml-20">
+            <a
+              href="https://maps.app.goo.gl/UHLvDaJmPPj7SY957"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center justify-between text-left rounded-full px-5 py-3 bg-[#eee9d9] cursor-pointer">
+              <div>
+                <p
+                  data-en="Sukhbaatar square"
+                  data-mn="Сүхбаатар талбай"
+                  class="font-semibold text-xl"></p>
+                <div class="flex gap-3">
+                  <p class="text-xs">𖡡</p>
+                  <p
+                    data-en="Ulaanbaatar"
+                    data-mn="Улаанбаатар"
+                    class="text-xs text-gray-500"></p>
+                </div>
+              </div>
+
+              <span
+                data-en="DAY 1"
+                data-mn="1 дэх өдөр"
+                class="rounded-full bg-white text-xs md:text-xl px-3 py-1"></span>
+
+              <img
+                class="hidden lg:block absolute top-[38%] left-[75.5%] w-[12%] aspect-square rounded-full object-cover opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+                src="images/suhbaatar.png" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/zhjWCdb5ER3N1j7c7"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center justify-between text-left rounded-full px-5 py-3 bg-[#8BB8C1] cursor-pointer">
+              <div>
+                <p
+                  data-en="Amarbayasgalant monastery"
+                  data-mn="Амарбаясгалант хийд"
+                  class="font-semibold text-xl"></p>
+                <div class="flex gap-3">
+                  <p class="text-xs">𖡡</p>
+                  <p
+                    data-en="Bulgan"
+                    data-mn="Булган"
+                    class="text-xs text-gray-500"></p>
+                </div>
+              </div>
+
+              <span
+                data-en="DAY 2"
+                data-mn="2 дахь өдөр"
+                class="rounded-full bg-white text-xs md:text-xl px-3 py-1"></span>
+              <img
+                class="hidden lg:block absolute top-[24%] left-[66%] w-[12%] aspect-square rounded-full object-cover opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+                src="images/hiid.png" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/D75t6zQ2nFFC15Ee9"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center justify-between text-left rounded-full px-5 py-3 bg-[#AAD8D7] cursor-pointer">
+              <div>
+                <p
+                  data-en="Khorgiin togoo"
+                  data-mn="Хоргын тогоо"
+                  class="font-semibold text-xl"></p>
+                <div class="flex gap-3">
+                  <p class="text-xs">𖡡</p>
+                  <p
+                    data-en="Arkhangai"
+                    data-mn="Архангай"
+                    class="text-xs text-gray-500"></p>
+                </div>
+              </div>
+              <span
+                data-en="DAY 3"
+                data-mn="3 дахь өдөр"
+                class="rounded-full bg-white text-xs md:text-xl px-3 py-1"></span>
+
+              <img
+                class="hidden lg:block absolute top-[37%] left-[50%] w-[12%] aspect-square rounded-full object-cover opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+                src="images/horgiintogoo.png" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/2VPXEqdw6F5jWVzi8"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center justify-between text-left rounded-full px-5 py-3 bg-[#8BC0BD] cursor-pointer">
+              <div>
+                <p
+                  data-en="Terkhiin tsagaan lake"
+                  data-mn="Тэрхийн цагаан нуур"
+                  class="font-semibold text-xl"></p>
+                <div class="flex gap-3">
+                  <p class="text-xs">𖡡</p>
+                  <p
+                    data-en="Arkhangai"
+                    data-mn="Архангай"
+                    class="text-xs text-gray-500"></p>
+                </div>
+              </div>
+
+              <span
+                data-en="DAY 4"
+                data-mn="4 дэх өдөр"
+                class="rounded-full bg-white text-xs md:text-xl px-3 py-1"></span>
+              <img
+                class="hidden lg:block absolute top-[39%] left-[47.4%] w-[12%] aspect-square rounded-full object-cover opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+                src="images/terhtsagaan.png" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/wgqUrLZ46r8hjyjHA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center justify-between text-left rounded-full px-5 py-3 bg-[#97CCE0] cursor-pointer">
+              <div>
+                <p
+                  data-en="Khuvsgul lake"
+                  data-mn="Хөвсгөл нуур"
+                  class="font-semibold text-xl"></p>
+                <div class="flex gap-3">
+                  <p class="text-xs">𖡡</p>
+                  <p
+                    data-en="Khuvsgul"
+                    data-mn="Хөвсгөл"
+                    class="text-xs text-gray-500"></p>
+                </div>
+              </div>
+
+              <span
+                data-en="DAY 5"
+                data-mn="5 дахь өдөр"
+                class="rounded-full bg-white text-xs md:text-xl px-3 py-1"></span>
+
+              <img
+                class="hidden lg:block absolute top-[10%] left-[48%] w-[12%] aspect-square rounded-full object-cover opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+                src="images/kowskol.png" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <!-- Action -->
+      <!--  -->
+
+      <div class="bg-linear-to-t from-sky-200 to-sky-50">
+        <section>
+          <div class="flex flex-col gap-4 justify-center text-center">
+            <h1
+              data-en="Pricing of Our Agency"
+              data-mn="Манай Агентлагийн Үнэ"
+              class="text-3xl md:text-5xl"></h1>
+            <p
+              data-en="Choose A Package That's Right For You"
+              data-mn="Өөрт Тохирох Багцийг Сонгоорой!"
+              class="text-xl"></p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-5 mt-12 mx-4 lg:flex-row lg:items-stretch lg:justify-evenly lg:mt-25 lg:mx-10">
+            <div
+              class="bg-white rounded-4xl w-full max-w-[384px] px-6 py-8 flex flex-col gap-8 justify-between group hover:shadow-[8px_8px_0_1px_#29728B40,-8px_-8px_0_1px_#27292ed0] transition duration-300">
+              <div class="flex gap-4 text-xl items-center">
+                <button class="rounded-full border-2 border-gray-300 w-9 h-9">
+                  🖤
+                </button>
+                <p
+                  data-en="Budget Package"
+                  data-mn="Хямд багц"
+                  class="text-center content-center"></p>
+              </div>
+
+              <div class="flex flex-col gap-10">
+                <div>
+                  <h1 class="text-3xl">500$</h1>
+                  <p
+                    data-en="Essentials Covered"
+                    data-mn="Үндсэн Зүйлс Багтсаэ"
+                    class="text-gray-500"></p>
+                </div>
+
+                <ul
+                  class="flex flex-col gap-4 list-['✓__'] ml-6 text-[#3F4145]">
+                  <h3
+                    data-en="Includes:"
+                    data-mn="Эдгээр зүйлс байна:"
+                    class="text-xl text-[#121316]"></h3>
+                  <li
+                    data-en="Group transportation (shared van/bus)"
+                    data-mn="Нийтийн тээвэр (микро / автобус)"></li>
+                  <li
+                    data-en="Standard accommodation (yurt or guesthouse)"
+                    data-mn="Стандарт байр(гэр эсвэл зочны байшин)"></li>
+                  <li
+                    data-en="Guided lake tour"
+                    data-mn="Хөтөчтэй нуурын аялал"></li>
+                  <li
+                    data-en="1 meal per day (breakfast)"
+                    data-mn="Өдрийн 1 хоол (өглөөний цай)"></li>
+                </ul>
+              </div>
+
+              <button
+                data-en="Select package"
+                data-mn="Багц сонгох"
+                class="border-none bg-[#A4D1E2] rounded-3xl py-3 cursor-pointer group-hover:bg-black text-white transition duration-300"></button>
+            </div>
+            <div
+              class="bg-white rounded-4xl w-full max-w-[384px] px-6 py-8 flex flex-col gap-8 justify-between group hover:shadow-[8px_8px_0_1px_#29728B40,-8px_-8px_0_1px_#27292ed0] transition duration-300">
+              <div class="flex gap-4 text-xl items-center">
+                <button class="rounded-full border-2 border-gray-400 w-9 h-9">
+                  💙
+                </button>
+                <p
+                  data-en="Standard Package"
+                  data-mn="Стандарт багц"
+                  class="text-center content-center"></p>
+              </div>
+
+              <div class="flex flex-col gap-10">
+                <div>
+                  <h1 class="text-3xl">800$</h1>
+                  <div class="justify-between flex items-center">
+                    <p
+                      data-en="Balanced Adventure"
+                      data-mn="Сэтгэл ханамжит аялал"
+                      class="text-gray-500"></p>
+                    <p
+                      data-en="Popular"
+                      data-mn="Хамгийн эрэлттэй"
+                      class="bg-[#6972B5] px-4 py-1 text-white rounded-full"></p>
+                  </div>
+                </div>
+
+                <ul
+                  class="flex flex-col gap-4 list-['✓__'] ml-6 text-[#3f4145]">
+                  <h3
+                    data-en="Includes:"
+                    data-mn="Эдгээр зүйлс байна:"
+                    class="text-xl text-[#121316]"></h3>
+                  <li
+                    data-en="Comfortable transportation (mini-bus)"
+                    data-mn="Тухтай тээвэр (Жижиг автобус)"></li>
+                  <li
+                    data-en="Mid-range accommodation (private yurt or lodge)"
+                    data-mn="Дунд зэрэглэлийн байр (хувийн гэр эсвэл амралтын байр)"></li>
+                  <li
+                    data-en="Guided lake tour + nearby hiking"
+                    data-mn="Хөтөчтэй нуурын аялал + ойролцоох явган аялал"></li>
+                  <li
+                    data-en="2 meals per day (breakfast and dinner)"
+                    data-mn="Өдрийн 2 хоол (өглөөний цай болон оройн хоол)"></li>
+                </ul>
+              </div>
+
+              <button
+                data-en="Select package"
+                data-mn="Багц сонгох"
+                class="border-none bg-[#A4D1E2] rounded-3xl py-3 cursor-pointer group-hover:bg-black text-white transition duration-300"></button>
+            </div>
+            <div
+              class="bg-white rounded-4xl w-full max-w-[384px] px-6 py-8 flex flex-col gap-8 justify-between group hover:shadow-[8px_8px_0_1px_#29728B40,-8px_-8px_0_1px_#27292ed0] transition duration-300">
+              <div class="flex gap-4 text-xl items-center">
+                <button class="rounded-full border-2 border-gray-500 w-9 h-9">
+                  ❤️
+                </button>
+                <p
+                  data-en="Luxury Package"
+                  data-mn="Дээд зэрэглэлийн багц"
+                  class="text-center content-center"></p>
+              </div>
+
+              <div class="flex flex-col gap-10">
+                <div>
+                  <h1 class="text-3xl">1200$</h1>
+                  <p
+                    data-en="Ultimate Comfort"
+                    data-mn="Дээд Зэргийн Тав Тух"
+                    class="text-gray-500"></p>
+                </div>
+
+                <ul
+                  class="flex flex-col gap-4 list-['✓__'] ml-6 text-[#3F4145]">
+                  <h3
+                    data-en="Includes:"
+                    data-mn="Эдгээр зүйлс байна:"
+                    class="text-xl text-[#121316]"></h3>
+                  <li
+                    data-en="Private transportation (SUV)"
+                    data-mn="Хувийн тээвэр"></li>
+                  <li
+                    data-en="Luxury accommodation (lakefront lodge)"
+                    data-mn="Тансаг зэрэглэлийн байр (нуурын эрэг дээрх амралтын байр)"></li>
+                  <li
+                    data-en="Guided tours (lake + reindeer herder experience)"
+                    data-mn="Хөтөчтэй аялал (нуур + цаа буга малчны амьдралтай танилцах)"></li>
+                  <li
+                    data-en="All meals included (local cuisine)"
+                    data-mn="Бүх төрлийн хоол багтсан (орон нутгийн хоол)"></li>
+                </ul>
+              </div>
+
+              <button
+                data-en="Select package"
+                data-mn="Багц сонгох"
+                class="border-none bg-[#A4D1E2] rounded-3xl py-3 cursor-pointer group-hover:bg-black text-white transition duration-300"></button>
+            </div>
+          </div>
+        </section>
+
+        <!--  -->
+        <!-- footer -->
+        <!--  -->
+
+        <footer
+          class="flex flex-col items-center gap-6 py-8 mt-40 md:flex-row md:justify-between md:px-10">
+          <div class="flex gap-5 text-[#6972B5] text-xl font-bold">
+            <a
+              href="https://www.facebook.com/"
+              class="gap-3 rounded-2xl bg-white p-3 cursor-pointer flex items-center text-center hover:bg-gray-100 transition duration-200">
+              <img class="h-6" src="images/facebook.png" alt="fb" />Facebook
+            </a>
+            <a
+              href="https://instagram.com/"
+              class="gap-3 rounded-2xl bg-white p-3 cursor-pointer flex items-center text-center hover:bg-gray-100 transition duration-200">
+              <img class="h-6" src="images/instagram.png" alt="ig" />Instagram
+            </a>
+          </div>
+          <img class="h-14" src="images/PiCo-logo.png" alt="logo" />
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      const language = document.querySelector("#language");
+      const texts = document.querySelectorAll("[data-mn]");
+      let lang = "en";
+
+      language.addEventListener("click", function () {
+        if (lang === "en") {
+          lang = "mn";
+        } else {
+          lang = "en";
+        }
+
+        for (let i = 0; i < texts.length; i++) {
+          if (lang === "mn") {
+            texts[i].textContent = texts[i].dataset.mn;
+          } else {
+            texts[i].textContent = texts[i].dataset.en;
+          }
+        }
+
+        if (lang === "en") {
+          language.textContent = "MN";
+        } else {
+          language.textContent = "EN";
+        }
+      });
+
+      for (let i = 0; i < texts.length; i++) {
+        texts[i].textContent = texts[i].dataset.en;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- snu eniig unshij baiwal tand ih bayrlalaa -->
